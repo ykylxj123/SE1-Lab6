@@ -1,0 +1,6 @@
+app
+app.exe
+*.exe
+*.txt
+check_const
+check_compare
