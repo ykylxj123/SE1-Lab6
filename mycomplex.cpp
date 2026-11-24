@@ -131,16 +131,16 @@ Complex& Complex::operator=(double value)
     return *this;
 }
 
-std::istream& operator>>(std::istream& stream, Complex& a)
+std::istream& operator>>(std::istream& stream, Complex& value)
 {
     std::string tmp;
-    stream >> a.re_ >> a.im_ >> tmp;
+    stream >> value.re_ >> value.im_ >> tmp;
     return stream;
 }
 
-std::ostream& operator<<(std::ostream& stream, const Complex& a)
+std::ostream& operator<<(std::ostream& stream, const Complex& value)
 {
-    a.print(stream);
+    value.print(stream);
     return stream;
 }
 
