@@ -1,5 +1,6 @@
 #include <cmath>
 #include <iostream>
+#include <string>
 
 #include "mycomplex.h"
 
@@ -132,7 +133,7 @@ Complex& Complex::operator=(double value)
 
 std::istream& operator>>(std::istream& stream, Complex& a)
 {
-    char tmp[256];
+    std::string tmp;
     stream >> a.re_ >> a.im_ >> tmp;
     return stream;
 }
